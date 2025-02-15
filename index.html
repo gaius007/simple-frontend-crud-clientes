@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD de Clientes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>CRUD Clientes</h1>
+  </header>
+
+  <main>
+    <section id="criar-cliente">
+      <h2>Create</h2>
+      <form id="formCriar">
+        <label for="nomeCriar">Nome:</label>
+        <input type="text" id="nomeCriar" name="nomeCriar" required />
+
+        <label for="emailCriar">Email:</label>
+        <input type="email" id="emailCriar" name="emailCriar" required />
+
+        <button type="submit">Criar</button>
+      </form>
+    </section>
+
+    <section id="consultar-cliente">
+      <h2>Read (por ID)</h2>
+      <form id="formConsultar">
+        <label for="idConsultar">ID:</label>
+        <input type="number" id="idConsultar" name="idConsultar" required />
+
+        <button type="submit">Consultar</button>
+      </form>
+    </section>
+
+    <section id="atualizar-cliente">
+      <h2>Update</h2>
+      <form id="formAtualizar">
+        <label for="idAtualizar">ID:</label>
+        <input type="number" id="idAtualizar" name="idAtualizar" required />
+
+        <label for="nomeAtualizar">Novo nome:</label>
+        <input type="text" id="nomeAtualizar" name="nomeAtualizar" required />
+
+        <label for="emailAtualizar">Novo email:</label>
+        <input type="email" id="emailAtualizar" name="emailAtualizar" required />
+
+        <button type="submit">Atualizar</button>
+      </form>
+    </section>
+
+    <section id="deletar-cliente">
+      <h2>Delete</h2>
+      <form id="formDeletar">
+        <label for="idDeletar">ID:</label>
+        <input type="number" id="idDeletar" name="idDeletar" required />
+
+        <button type="submit">Deletar</button>
+      </form>
+    </section>
+
+    <section id="listar-clientes">
+      <h2>Read (Todos)</h2>
+      <button id="btnListar">Listar Todos</button>
+    </section>
+
+    <section id="resultado">
+      <h2>Resultado</h2>
+      <pre id="resposta"></pre>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
